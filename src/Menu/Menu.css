@@ -1,0 +1,41 @@
+.Menu {
+    width: 100%;
+    height: 150px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.Menu_left {
+    display: flex;
+    align-items: center;
+}
+.Menu_left svg:nth-child(2) {
+    margin-left: 25px;
+}
+/* .Menu_left svg:nth-child(1) {
+    
+} */
+.Menu_left svg {
+    cursor: pointer;
+    
+}
+.Menu_left svg path {
+    transition: all ease-in-out .15s;
+}
+.Menu_left svg.selected {
+    width: 45px;
+    height: 45px;
+}
+.Menu_left svg.selected path {
+    fill: #3d69bb;
+    
+}
+.Menu_left svg:not(.selected):hover path {
+    fill: rgb(87, 87, 87);
+}
+.Menu_logo {
+    cursor: pointer;
+}
